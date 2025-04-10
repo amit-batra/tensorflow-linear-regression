@@ -14,20 +14,19 @@ Each model is trained using a simple neural network with one input and one outpu
 
 - Python 3.11.x (note: Tensorflow isn't supported for Python versions 3.12 and higher at this time)
 - TensorFlow
-- NumPy
 
 ## Installation
 
-1. Clone this repository
-2. Install the required packages:
-   - On Windows/Linux
-     ```bash
-     pip install tensorflow tensorflow numpy
-     ```
-   - On Mac
-     ```bash
-     pip install tensorflow-macos tensorflow-metal numpy
-     ```
+1. Clone this repository.
+2. (Optional but highly recommended) Create and activate a Python3 virtual environment.
+3. Install the required packages:
+```bash
+source install-project-dependencies.sh
+```
+1. Validate whether all dependencies have been installed successfully:
+```bash
+python3 validate-tensorflow-install.py
+```
 
 ## Code Structure
 
@@ -42,7 +41,7 @@ The code is organized into several functions:
 
 Run the script directly:
 ```bash
-python hello-tensorflow.py
+python3 hello-tensorflow.py
 ```
 
 The script will:
